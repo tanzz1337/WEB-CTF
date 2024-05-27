@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica,Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol","Fira Code","Anonymous Pro";
+}
+
+body{
+  background-image: url('https://img.freepik.com/free-vector/futuristic-technology-background_52683-35442.jpg'); /* Ganti 'your-image.jpg' dengan nama file gambar Anda */
+  background-size: cover; /* Memastikan gambar memenuhi seluruh halaman */
+  background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+  background-position: center; /* Menempatkan gambar di tengah */
+  margin: 0; /* Menghilangkan margin default dari body */
+}
+
+
+.main-container {
+  padding: 30px;
+}
+
+/* HEADING */
+
+.heading {
+  text-align: center;
+}
+
+.heading__title {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.heading__credits {
+  margin: 10px 0px;
+  color: #ffffff;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.heading__link {
+  text-decoration: none;
+}
+
+.heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card__link:hover::after {
+  width: 100%;
+}
+
+.card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+  background-image: url('https://img.freepik.com/free-vector/cyber-security-concept_23-2148541077.jpg');
+  background-position: center;
+  
+}
+
+.card-2 {
+  background-image: url('https://img.freepik.com/free-vector/futuristic-cyber-security-background_23-2148536248.jpg');
+  background-position: center;
+}
+
+.card-3 {
+  background-image: url('https://img.freepik.com/free-vector/cyber-security-design_23-2148541078.jpg');
+  background-position: center;
+}
+
+.card-4 {
+  background-image: url('https://img.freepik.com/free-vector/electronic-security-business-isometric_107791-161.jpg');
+  background-position: center;
+}
+
+.card-5 {
+  background-image: url('https://img.freepik.com/free-vector/hacker-activity-concept_23-2148535361.jpg');
+  background-position: center;
+}
+
+.card-6 {
+  background-image: url('https://img.freepik.com/free-vector/futuristic-technology-background_23-2148475045.jpg');
+  background-position: center;
+}
+
+.card-7 {
+  background-image: url('https://img.freepik.com/free-vector/hacker-activity-concept-with-man-illustration_23-2148530633.jpg');
+  background-position: center;
+}
+
+.card-8 {
+  background-image: url('https://img.freepik.com/free-vector/hacker-activity-stealing-personal-information_23-2148545294.jpg');
+  background-position: center;
+}
+
+.card-9 {
+  background-image: url('https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549186.jpg');
+  background-position: center;
+}
+
+.card-10 {
+  background-image: url('https://img.freepik.com/free-vector/cyber-security-concept_23-2148540042.jpg');
+  background-position: center;
+
+}
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+
+.smooth-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.smooth-button:hover {
+  background-color: #2980b9;
+}
+
